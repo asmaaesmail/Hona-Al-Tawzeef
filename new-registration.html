@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="HandheldFriendly" content="true">
+      <title> هنا التوظيف - تسجيل جديد </title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="shortcut icon" href="img/logo.png">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/animate.css">
+      <!-- This for here -->
+      <link rel="stylesheet" href="css/owl.carousel.css">
+      <!-- -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style1.css">
+   </head>
+   <body>
+      <!-- Start Loading-Page -->
+      <div class="loader">
+         <div class="loading">
+            <img src="img/logo.png">
+         </div>
+      </div>
+      <!-- End Loading-Page -->
+      <!-- End Header -->
+      <div class=" log-in ">
+         <h4>تسجيل الدخول</h4>
+         <form class="form form-login" action="index.html">
+            <div class="form-group">
+               <input type="text" class="form-control" id="email" name="email" placeholder="الاسم">
+            </div>
+            <div class="form-group">
+               <input type="number" class="form-control" id="email" name="email" placeholder="رقم الجوال ">
+            </div>
+            <div class="form-group">
+               <input type="email" class="form-control" id="email" name="email" placeholder="البريد الالكتروني">
+            </div>
+            <div class="form-group eye-relative">
+              <input type="password" id="password-field" class="form-control" id="email" name="email" placeholder="كلمة المرور">
+                   <i toggle="#password-field" class="fas fa-eye eye-abslute toggle-password"></i>
+            </div>
+            <!-- <p class="aligne-left forget-password">قرات كل الشر</p>-->
+            <ul class="checkbox-list">
+               <li>
+                  <input type="checkbox" id="test1">
+                  <label for="test1"><span class="span-margin-right">قرات <a href="log-in.html"> الشروط و الاحكام</a> الخاصة بموقع هنا للتوظيف وأوافق عليها</span></label>
+               </li>
+            </ul>
+            <div class="form-group">
+               <button type="submit" class="square-an white button-form">تسجيل الدخول</button>
+            </div>
+            <p class=" dont-acount"><span>  لدي حساب  </span><a href="login.html"> تسجيل دخول</a></p>
+         </form>
+      </div>
+      <!-- Strat End -->
+      <!--===============================
+         SCRIPT
+         ===================================-->
+      <script src="js/jquery-1.11.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script>
+         new WOW().init();
+         
+      </script>
+      
+      
+       <!--  special for this page -->
+      <script>    
+       $(".toggle-password").click(function() {
+
+          $(this).toggleClass("fa-eye fa-eye-slash");
+          var input = $($(this).attr("toggle"));
+          if (input.attr("type") == "password") {
+            input.attr("type", "text");
+          } else {
+            input.attr("type", "password");
+          }
+        });
+       </script>
+        <!-- end special for this page -->
+      <!-- -->
+      <script src="js/script.js"></script>
+   </body>
+</html>
