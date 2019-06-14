@@ -68,7 +68,8 @@
       <!--End Navbar-->
       <!-- contatc section -->
       <section class="width-70 contact">
-         <h4>اضافة طلب</h4>
+	<div class="container">      
+        <h3 class="title1"> اضافة طلب</h3>
          <div class="contact1">
             <form class="form-talb">
                <div class="row tabl-bottom">
@@ -188,9 +189,9 @@
                </div>
             </form>
          </div>
+	  </div>	
       </section>
-      
-      
+
 
 
       <!-- end contact section -->
@@ -259,27 +260,28 @@
          new WOW().init();
          
       </script>
+    
+      
       <script>
-         $(document).ready(function(){
-           $(".div-append").click(function(){
-             var x = $("form").serializeArray();
-             $.each(x, function(i, field){
-               $("#final-result").css('display', 'block');
-               $("#final-result").append(field.value + " ");
-             });
-               $("#final-result").append( "<span class='delete-append removeDiv1'><i class='far fa-times-circle'></i></span>");
-               
-                $("#result").append( ' <input type="hidden" class="form-control" name="المسمي الوظيفي" placeholder="المسمي الوظيفي" value="مهندس برمجيات">');
-               $("#result").append( '<input type="hidden" class="form-control" name="جهة العمل"   placeholder="جهة العمل" value="بانوراما القصيم">');
-               $("#result").append( '<input type="hidden" class="form-control" name="تاريخ البداية"  placeholder="تاريخ البداية" value="15/3/2010">');
-               $("#result").append( '<input type="hidden" class="form-control" name="تاريخ الانتهاء"  placeholder="تاريخ النهاية" value="15/2/2015">');
-               $("#result").append( '<input type="hidden" class="form-control" name="سنوات الخبرة"  value="5" placeholder="سنوات الخبرة">');
-           });
-         });
-          n
-     
+        $(document).ready(function() {
+            $(".div-append").click(function() {
+                var x = $("form").serializeArray();
+                $.each(x, function(i, field) {
+                    $("#final-result").css('display', 'block');
+                    $("#final-result ").append('<span class="test">' + field.value + '<input type="hidden" value="' + field.value +'" />  </span>');
+                });
+                $("#final-result").append("<span class='delete-append removeDiv1'><i class='far fa-times-circle'></i></span>");
+//
+//                $("#result").append(' <input type="hidden" class="form-control" name="المسمي الوظيفي" placeholder="المسمي الوظيفي" value="مهندس برمجيات">');
+//                $("#result").append('<input type="hidden" class="form-control" name="جهة العمل"   placeholder="جهة العمل" value="بانوراما القصيم">');
+//                $("#result").append('<input type="hidden" class="form-control" name="تاريخ البداية"  placeholder="تاريخ البداية" value="15/3/2010">');
+//                $("#result").append('<input type="hidden" class="form-control" name="تاريخ الانتهاء"  placeholder="تاريخ النهاية" value="15/2/2015">');
+//                $("#result").append('<input type="hidden" class="form-control" name="سنوات الخبرة"  value="5" placeholder="سنوات الخبرة">');
+            });
+        });
+        
 
-      </script>
+    </script>
       
       <script>
            $('#final-result').on('click', '.delete-append', function () {
@@ -287,6 +289,10 @@
         });
        </script>
        
+      
+       
+       
+       <!-- uppload files -->
        
        <script>
        
