@@ -611,10 +611,12 @@ p.p-padding {
     
     .file-upload-button {
     
-        width: 24%;
+        width: 27%;
     }
     .file-upload-input {
-        width: 76%;}
+        width: 73%;
+	 padding: 8px 7px;   
+	}
 }
 @media (max-width: 768px) {
     
